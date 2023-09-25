@@ -59,6 +59,7 @@ int main ()
             {
                 arr.erase(arr.begin() + findTheMostSuitableIndexToRemove(arr));
             }
+            minimalVariation = *std::max_element(arr.begin(), arr.end()) - *std::min_element(arr.begin(), arr.end()); // находим разницу
     }
 
     std::cout << minimalVariation;
